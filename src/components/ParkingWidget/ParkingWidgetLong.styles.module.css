@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 114px;
+    width: 928px;
+    background-color: var(--si-text);
+    border-radius: 29px;
+    box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.08);
+    font-size: 36px;
+    color: var(--si-text-dark);
+    font-weight: 400;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.wrapper:hover {
+    background-color: var(--si-accent);
+}
+
+.wrapper:hover:nth-child(n) {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.title {
+    margin-left: 40px;
+}
+
+.date {
+    margin-right: 40px;
+}

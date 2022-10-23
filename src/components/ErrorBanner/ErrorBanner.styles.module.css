@@ -1,0 +1,26 @@
+.wrapper {
+    background-color: var(--si-error-banner-bg);
+    border-radius: 20px;
+    border: 4px solid var(--si-error-banner-border);
+    color: var(--si-text);
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s {
+    height: 80px;
+    width: 520px;
+}
+
+.m {
+    height: 90px;
+    width: 620px;
+}
+
+.l {
+    height: 110px;
+    width: 720px;
+}

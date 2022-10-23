@@ -1,0 +1,56 @@
+.wrapper {
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid var(--si-infi-border-color);
+    color: var(--si-text-dark);
+    background-color: var(--si-text);
+    transition: 400ms;
+    border-radius: 16px;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 41px;
+    padding-left: 25px;
+    height: 53px;
+}
+
+.wrapper:disabled {
+    background-color: var(--si-infi-disabled);
+    border-color: var(--si-infi-disabled);
+}
+
+.wrapper:focus {
+    transition: 400ms;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapperS {
+    width: 250px;
+}
+
+.wrapperM {
+    width: 417px;
+}
+
+.wrapperL {
+    width: 550px;
+}
+
+.valid {
+    border-color: var(--si-valid-color);
+}
+
+.invalid {
+    border-color: var(--si-invalid-color);
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+}
+
+.invalidMessage {
+    min-height: 20px;
+    margin-bottom: 7px;
+    color: var(--si-invalid-color);
+}
