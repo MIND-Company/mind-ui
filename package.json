@@ -1,6 +1,6 @@
 {
   "name": "@ermolaev/mind-ui",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0-alpha.4",
   "homepage": "https://github.com/MIND-Company/mind-ui",
   "scripts": {
     "start": "react-scripts start",
