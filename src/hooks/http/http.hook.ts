@@ -32,12 +32,13 @@ export const useHttp =
     }
 
     if (configObject.method !== 'GET' && 'body' in configObject) {
-      const response = await fetch(configObject.url, {
-        method: configObject.method,
-        body: JSON.stringify(configObject.body),
-        headers: 'headers' in configObject ? configObject.headers : {},
-      });
       try {
+        const response = await fetch(configObject.url, {
+          method: configObject.method,
+          body: JSON.stringify(configObject.body),
+          headers: 'headers' in configObject ? configObject.headers : {},
+        });
+
         return await response.json();
       } catch (e) {
         if (e instanceof SyntaxError) {
@@ -48,11 +49,12 @@ export const useHttp =
       }
     }
 
-    const response = await fetch(configObject.url, {
-      method: 'GET',
-      headers: 'headers' in configObject ? configObject.headers : {},
-    });
     try {
+      const response = await fetch(configObject.url, {
+        method: 'GET',
+        headers: 'headers' in configObject ? configObject.headers : {},
+      });
+
       return await response.json();
     } catch (e) {
       if (e instanceof SyntaxError) {
