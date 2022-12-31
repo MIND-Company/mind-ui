@@ -39,6 +39,10 @@ export const useHttp =
           headers: 'headers' in configObject ? configObject.headers : {},
         });
 
+        if (!response.ok) {
+          throw response;
+        }
+
         return await response.json();
       } catch (e) {
         if (e instanceof SyntaxError) {
@@ -54,6 +58,10 @@ export const useHttp =
         method: 'GET',
         headers: 'headers' in configObject ? configObject.headers : {},
       });
+
+      if (!response.ok) {
+        throw response;
+      }
 
       return await response.json();
     } catch (e) {
